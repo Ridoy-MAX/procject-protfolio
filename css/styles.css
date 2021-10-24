@@ -53,13 +53,14 @@ a {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: var(--first-color);
+    background-color: #6C63FF;
     width: 80%;
     height: 100vh;
     padding: 2rem 0;
     z-index: var(--z-fixed);
     transition: .5s;
-    overflow-y: auto; } }
+    overflow-y: auto;
+    color: white; } }
 @media screen and (min-width: 768px) {
   body {
     margin: 0; }
@@ -74,6 +75,32 @@ a {
 
   .header__toggle {
     padding-right: 10px; } }
+@media (max-width: 768px) {
+  .header .nav .menu {
+    flex-direction: column; }
+    .header .nav .menu .logo {
+      display: none; }
+    .header .nav .menu .login-contact {
+      flex-direction: column;
+      text-align: center; }
+      .header .nav .menu .login-contact a {
+        color: white;
+        background-color: #8682e6 !important;
+        text-align: center;
+        margin-right: 30px;
+        border-radius: 30px;
+        height: 30px;
+        line-height: 30px !important; }
+      .header .nav .menu .login-contact .num {
+        background-color: #8682e6 !important;
+        text-align: center;
+        margin-right: 30px; }
+    .header .nav .menu .nav-item .list {
+      flex-direction: column;
+      text-align: center;
+      color: white; }
+      .header .nav .menu .nav-item .list li a {
+        color: white; } }
 @media screen and (min-width: 576px) {
   .nav {
     width: 288px; } }
@@ -439,6 +466,65 @@ Feature start
 
 /*==========
 Feature END
+==============*/
+/*==========
+Footer
+==============*/
+.footer {
+  margin-bottom: 150px; }
+  .footer .footer-page .footer-details .logo {
+    margin-bottom: 30px; }
+  .footer .footer-page .footer-details .details p {
+    font-size: 13px;
+    font-family: var(--ff2);
+    color: #444444;
+    font-weight: 500;
+    line-height: 28px;
+    padding-right: 74px; }
+  .footer .footer-page .footer-details .social-logo ul li {
+    width: 40px;
+    height: 40px;
+    background-color: #6C63FF;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 2px;
+    transition: 0.4s; }
+    .footer .footer-page .footer-details .social-logo ul li:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .footer .footer-page .footer-details .social-logo ul li i {
+      line-height: 40px;
+      color: white;
+      text-align: center; }
+  .footer .footer-page .menu-item ul li a {
+    font-size: 13px;
+    font-family: var(--ff2);
+    color: #444444;
+    font-weight: 500;
+    line-height: 37px;
+    position: relative; }
+    .footer .footer-page .menu-item ul li a:hover {
+      color: #000; }
+    .footer .footer-page .menu-item ul li a::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background-color: #6C63FF;
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+      transition: 0.3s; }
+    .footer .footer-page .menu-item ul li a:hover::after {
+      width: 60%; }
+  .footer .footer-page .our-service ul li a {
+    font-size: 13px;
+    font-family: var(--ff2);
+    color: #444444;
+    font-weight: 500;
+    line-height: 37px; }
+
+/*==========
+Footer end
 ==============*/
 
 /*# sourceMappingURL=styles.css.map */

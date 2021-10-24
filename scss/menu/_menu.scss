@@ -514,3 +514,110 @@ Feature start
 /*==========
 Feature END
 ==============*/
+
+/*==========
+Footer
+==============*/
+
+.footer{
+    margin-bottom: 150px;
+    .footer-page{
+        .footer-details{
+            .logo{
+               margin-bottom: 30px;
+            }
+            .details{
+                p{
+                   font-size: 13px;
+                   font-family: var(--ff2);
+                   color: #444444;
+                   font-weight: 500;
+                   line-height: 28px;
+                   padding-right: 74px;
+                }
+            }
+            .social-logo{
+                ul{
+                    li{
+                        width: 40px;
+                        height: 40px;
+                        background-color: #6C63FF;
+                        color: white;
+                        margin-right: 10px;
+                        text-align: center;
+                        border-radius: 2px;
+
+                        transition: 0.4s;
+                        &:hover{
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+                        i{
+                            line-height: 40px;
+                            color: white;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-item{
+            ul{
+                li{
+                    a{
+                        font-size: 13px;
+                        font-family: var(--ff2);
+                        color: #444444;
+                        font-weight: 500;
+                        line-height: 37px;
+                        position: relative;
+                        &:hover{
+                            color: #000;
+                        }
+                        &::after{
+                            content: "";
+                            width: 0%;
+                            height: 2px;
+                            background-color: #6C63FF;
+                            position: absolute;
+                            bottom: -13px;
+                            left: 0;
+                            transition: 0.3s;
+
+                        }
+                        &:hover{
+                              
+                            &::after{
+                                width: 60%;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .our-service{
+            ul{
+                li{
+                    a{
+                        font-size: 13px;
+                        font-family: var(--ff2);
+                        color: #444444;
+                        font-weight: 500;
+                        line-height: 37px;
+                    }
+                }
+            }
+        }
+        .bank-card{
+
+        }
+    }
+}
+
+
+
+
+
+/*==========
+Footer end
+==============*/
