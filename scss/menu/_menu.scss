@@ -55,6 +55,9 @@ menu css start
                             line-height: 60px;
                             font-weight: 500;
                             padding-right: 30px;
+                            &:hover{
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }
                 }
              
                   .num{
@@ -73,6 +76,11 @@ menu css start
                             text-align: center;
                             border-radius: 40px;
                             margin-top: 10px;
+                            transition: 0.4s;
+                            cursor: pointer;
+                            &:hover{
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }
                   }
             }
         }
@@ -113,10 +121,13 @@ writing service css Start
             background-color: #6C63FF;
             height: 50px;
             width: 180px;
-         
+         transition: 0.4a;
             text-align: center;
             border-radius: 40px;
             margin-top: 10px;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
         }
     }
 }
@@ -318,4 +329,188 @@ Types of work we offer start=
 
 /*==========
 Types of work we offer END
+==============*/
+/*==========
+How it work start
+==============*/
+.how-it-work{
+    margin-bottom: 200px;
+    .heading{
+        h2{
+            font-family: var(--ff2);
+            font-weight: 600;
+            font-size: 30px;
+            padding-right: 30px;
+            color: #FF4D08;
+            margin-top: 20px;
+           
+        }
+        p{
+            font-family: var(--ff1);
+            font-weight: 400;
+            font-size: 12px;
+            padding-right: 30px;
+            color: #1f1c1c;
+            
+        }
+    }
+  
+    .work{
+        
+          
+         .our-work{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            height: 300px;
+             h3{
+                 font-family: var(--ff2);
+                 font-weight: 400;
+                 font-size: 20px;
+                 padding-right: 52px;
+                 padding-left: 50px;
+                 color: #3a3939;
+                 margin-top: 20px;
+                 text-align: center;
+                 margin-top: 20px;
+                 padding-top: 20px;
+                 span{
+                     font-family: var(--ff2);
+                 font-weight: 500;
+                 font-size: 45px;
+                     color: #FF4C52;
+                 }
+             }
+             p{
+                font-family: var(--ff1);
+                 font-weight: 400;
+                 font-size: 15px;
+                
+                 color: #777777;
+                 margin-top: 20px; 
+                 text-align: left;
+                 padding-left: 50px;
+                 padding-right: 50px;
+             }
+         }
+         .one{
+           h3{
+               span{
+                   color: #23AEC4;
+               }
+           }
+         }
+         .two{
+            h3{
+                span{
+                    color: #FF4C52;
+                }
+            }
+         }
+         .three{
+            h3{
+                span{
+                    color: #23AEC4;
+                }
+            }
+         }
+       
+    }
+}
+
+/*==========
+How it work End
+==============*/
+/*==========
+Feature start
+==============*/
+.feature{
+    .heading{
+        margin-bottom: 80px;
+        h2{
+            font-family: var(--ff2);
+            font-weight: 600;
+            font-size: 30px;
+            padding-right: 30px;
+            color: #FF4D08;
+            margin-top: 20px;
+           
+        }
+      
+    }
+    .heading-two{
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        a{
+            font-family: var(--ff1);
+            font-size: 12px;
+            margin-right: 15px;
+            line-height: 60px;
+            font-weight: 500;
+            padding-right: 0px;
+            display: block;
+            background-color: #6C63FF;
+            height: 47px;
+            width: 200px;
+            line-height: 47px;
+            color: #e7e2e2;
+            border-radius: 40px;
+            margin-top: 10px;
+            transition: 0.4s;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+}
+    .our-feature{
+        .item{
+           
+            .one{
+                border-right:2px solid #9F9F9F;
+            }
+            .logo{
+                width: 80px;
+                a{
+                    font-size: 45px;
+                    padding-right: 20px;
+                    i{
+                        color: #96CBFB;
+                        margin-right: 20px;
+                        margin-top: 20px;
+                    }
+                }
+                .jquery{
+                    i{
+                        color: #0868AB;
+                    }
+                    
+                }
+                .vuejs{
+                  i{
+                    color: #41B883;
+                  }
+                }
+
+            }
+            .text{
+               
+               
+                p{
+                      margin-bottom: 0;
+                      font-family: var(--ff1);
+                 font-weight: 400;
+                 font-size: 13px;
+                padding-right: 30px;
+                 color: #777777;
+                 margin-top: 20px; 
+                 text-align: left;
+                 margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+/*==========
+Feature END
 ==============*/
