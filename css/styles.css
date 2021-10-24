@@ -1,0 +1,315 @@
+/*==========
+variable css start
+==============*/
+:root {
+  --ff1: 'Open Sans', sans-serif;
+  --ff2: 'Raleway', sans-serif; }
+
+/*==========
+variable css end
+==============*/
+/*==========================
+responsive NAV bar 
+==================
+========================*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.bd-grid {
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 1rem;
+  background-color: #FFF;
+  display: flex;
+  align-items: center; }
+  .header .header__toggle {
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 20px;
+    position: absolute;
+    right: 0; }
+
+/*responsive*/
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto; } }
+@media screen and (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: var(--first-color);
+    width: 80%;
+    height: 100vh;
+    padding: 2rem 0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    overflow-y: auto; } }
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0; }
+
+  .header {
+    height: calc(var(--header-height) + 1rem); }
+    .header__logo, .header__toggle {
+      display: none; }
+
+  .nav {
+    width: 100%; }
+
+  .header__toggle {
+    padding-right: 10px; } }
+@media screen and (min-width: 576px) {
+  .nav {
+    width: 288px; } }
+.show {
+  left: 0; }
+
+/*==========================
+=============================
+==============================
+=============================
+responsive NAV bar end
+===============================
+=============================
+
+========================*/
+/*==========
+menu css start
+==============*/
+.header .nav .menu .logo a {
+  line-height: 50px; }
+.header .nav .menu .nav-item ul li a {
+  color: #444447;
+  font-family: var(--ff2);
+  font-size: 15px;
+  margin-right: 15px;
+  line-height: 60px;
+  font-weight: 500;
+  padding-right: 30px;
+  position: relative; }
+  .header .nav .menu .nav-item ul li a:hover {
+    color: #000; }
+  .header .nav .menu .nav-item ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #6C63FF;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    transition: 0.4s; }
+  .header .nav .menu .nav-item ul li a:hover::after {
+    width: 60%; }
+.header .nav .menu .login-contact {
+  line-height: 60px; }
+  .header .nav .menu .login-contact a {
+    color: #444444;
+    font-family: var(--ff2);
+    font-size: 15px;
+    margin-right: 15px;
+    line-height: 60px;
+    font-weight: 500;
+    padding-right: 30px; }
+  .header .nav .menu .login-contact .num {
+    color: #ffffff;
+    font-family: var(--ff1);
+    font-size: 15px;
+    margin-right: 15px;
+    line-height: 60px;
+    font-weight: 500;
+    padding-right: 0px;
+    display: block;
+    background-color: #6C63FF;
+    height: 40px;
+    width: 173px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    margin-top: 10px; }
+
+/*==========
+menu css END
+==============*/
+/*==========
+writing service css Start
+==============*/
+.writing {
+  margin-top: 200px; }
+  .writing .easy-writing h2 {
+    font-family: var(--ff2);
+    font-weight: 500;
+    font-size: 40px;
+    padding-right: 30px;
+    color: #000;
+    margin-bottom: 50px;
+    margin-top: 120px; }
+  .writing .easy-writing a {
+    color: #ffffff;
+    font-family: var(--ff2);
+    font-size: 12px;
+    margin-right: 15px;
+    line-height: 50px;
+    font-weight: 500;
+    padding-right: 0px;
+    display: block;
+    background-color: #6C63FF;
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    border-radius: 40px;
+    margin-top: 10px; }
+
+/*==========
+writing service css END
+==============*/
+/*==========
+Quality paper css
+==============*/
+.Quality-paper {
+  margin-top: 200px; }
+  .Quality-paper .quality h2 {
+    font-family: var(--ff2);
+    font-weight: 500;
+    font-size: 40px;
+    padding-right: 30px;
+    color: #FF4D08;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: left; }
+  .Quality-paper .quality p {
+    font-family: var(--ff1);
+    font-size: 14px;
+    color: #444447;
+    line-height: 24px;
+    text-align: left;
+    padding-right: 50px; }
+
+/*==========
+Quality paper css end
+==============*/
+/*==========
+Our clint review css 
+==============*/
+.clint-review {
+  margin-top: 200px;
+  margin-bottom: 150px; }
+  .clint-review .heading h2 {
+    font-family: var(--ff2);
+    font-weight: 600;
+    font-size: 30px;
+    padding-right: 30px;
+    color: #FF4D08;
+    margin-top: 20px; }
+  .clint-review .heading p {
+    font-family: var(--ff1);
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 30px;
+    color: #1f1c1c; }
+  .clint-review .banner-slider {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px; }
+    .clint-review .banner-slider .slick-dots {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      padding-bottom: 30px; }
+      .clint-review .banner-slider .slick-dots li {
+        width: 5px;
+        height: 5px;
+        background-color: #6C63FF;
+        margin-right: 10px;
+        border-radius: 7px; }
+        .clint-review .banner-slider .slick-dots li button {
+          display: none; }
+      .clint-review .banner-slider .slick-dots .slick-active {
+        width: 10px; }
+    .clint-review .banner-slider .banner-item .box {
+      height: 98px;
+      width: 98px;
+      border: 3px solid #308ECE;
+      border-radius: 50%;
+      margin: auto;
+      background: url(../../img/perfil.jpg);
+      background-size: cover;
+      margin-top: 30px; }
+    .clint-review .banner-slider .banner-item .banner-heading {
+      margin-top: 20px; }
+      .clint-review .banner-slider .banner-item .banner-heading .rating a i {
+        color: #FFA300; }
+      .clint-review .banner-slider .banner-item .banner-heading .details h3 {
+        font-family: var(--ff2);
+        font-weight: 500;
+        font-size: 15px;
+        color: #308ECE; }
+      .clint-review .banner-slider .banner-item .banner-heading .details p {
+        font-family: var(--ff1);
+        font-weight: 400;
+        font-size: 12px;
+        padding-right: 30px;
+        color: #777777; }
+
+/*==========
+Our clint review css end
+==============*/
+/*==========
+Types of work we offer start=
+==============*/
+.types-of-work {
+  margin-bottom: 150px; }
+  .types-of-work .heading h2 {
+    font-family: var(--ff2);
+    font-weight: 600;
+    font-size: 30px;
+    padding-right: 30px;
+    color: #FF4D08;
+    margin-top: 20px; }
+  .types-of-work .heading p {
+    font-family: var(--ff1);
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 30px;
+    color: #1f1c1c; }
+  .types-of-work .work {
+    margin-top: 30px; }
+    .types-of-work .work .text {
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      height: 50px;
+      display: flex; }
+      .types-of-work .work .text a i {
+        color: #FFA300;
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px; }
+      .types-of-work .work .text p {
+        font-family: var(--ff1);
+        font-weight: 400;
+        font-size: 12px;
+        padding-right: 30px;
+        line-height: 50px;
+        color: #1f1c1c; }
+
+/*==========
+Types of work we offer END
+==============*/
+
+/*# sourceMappingURL=styles.css.map */
