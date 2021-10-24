@@ -119,6 +119,13 @@ responsive NAV bar end
 /*==========
 menu css start
 ==============*/
+.header .header__logo {
+  position: relative; }
+  .header .header__logo a img {
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: 0; }
 .header .nav .menu .logo a {
   line-height: 50px; }
 .header .nav .menu .nav-item ul li a {
@@ -150,9 +157,15 @@ menu css start
     font-family: var(--ff2);
     font-size: 15px;
     margin-right: 15px;
-    line-height: 60px;
+    line-height: 40px;
     font-weight: 500;
-    padding-right: 30px; }
+    padding-right: 30px;
+    border-radius: 40px;
+    height: 40px;
+    width: 112px;
+    text-align: center;
+    margin-top: 10px;
+    transition: 00.3s; }
     .header .nav .menu .login-contact a:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
   .header .nav .menu .login-contact .num {

@@ -2,6 +2,17 @@
 menu css start
 ==============*/
 .header{
+    .header__logo{
+        position: relative;
+       a{
+        img{
+            display: none;
+            position: absolute;
+            top: -100px;
+            left: 0;
+        }
+       }
+    }
     .nav{
         .menu{
             .logo{
@@ -52,9 +63,15 @@ menu css start
                             font-family: var(--ff2);
                             font-size: 15px;
                             margin-right: 15px;
-                            line-height: 60px;
+                            line-height: 40px;
                             font-weight: 500;
                             padding-right: 30px;
+                            border-radius: 40px;
+                            height: 40px;
+                            width: 112px;
+                            text-align: center;
+                            margin-top: 10px;
+                            transition: 00.3s;
                             &:hover{
                                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                             }
