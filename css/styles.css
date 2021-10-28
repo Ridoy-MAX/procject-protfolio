@@ -729,6 +729,18 @@ Responsive css start
       font-size: 35px !important; } }
 /*========= Break pont five======*/
 @media (max-width: 575px) {
+  .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #222cc829;
+    position: fixed;
+    z-index: 11; }
+
   .header .nav .menu .login-contact {
     flex-direction: row;
     margin-top: 30px;
