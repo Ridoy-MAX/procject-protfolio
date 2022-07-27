@@ -1,0 +1,10 @@
+<?php
+include_once ('db.php');
+// print_r($_GET);
+ $id = $_GET['message_id'];
+
+$update_query = "UPDATE guest_messages SET read_status=1  WHERE id='$id'";
+mysqli_query($db_connect,$update_query);
+header('location: guest_message.php')
+
+ ?>
